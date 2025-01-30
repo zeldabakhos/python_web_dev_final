@@ -1,0 +1,122 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General page styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0e7ff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Main container to center content */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+/* Table styling */
+.students-data table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.students-data table th,
+.students-data table td {
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ecf0f1;
+    color: #34495e;
+}
+
+.students-data table th {
+    background-color: #3498db;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.students-data table td {
+    background-color: #f9f9f9;
+}
+
+.students-data table tr:hover td {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* Accent colors */
+.students-data table td:nth-child(2) {
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .students-data table th,
+    .students-data table td {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}

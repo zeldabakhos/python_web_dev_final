@@ -5,27 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard des étudiants</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="../static/styles.css">
 </head>
 
 <body>
-    <h1>Tableau de bord des étudiants</h1>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Étudiant</th>
-                <th>Moyenne</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for student in students %}
-            <tr>
-                <td>{{ student.name }}</td>
-                <td>{{ student.average|round(2) }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    <div class="container">
+        <header>
+            <h1>Tableau de bord des étudiants</h1>
+            <p>Consultez les moyennes et classements des étudiants</p>
+        </header>
+
+        <section class="students-data">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Étudiant</th>
+                        <th>Moyenne</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for student in students %}
+                    <tr>
+                        <td>{{ student.name }}</td>
+                        <td>{{ student.average|round(2) }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 School Management System</p>
+        </footer>
+    </div>
 </body>
 
 </html>
